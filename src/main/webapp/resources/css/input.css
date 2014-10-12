@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-------------------------------------------------input样式-------------------------------------------------------------*/
+.input_220{width:218px;padding:0px 0px 0pt 3px;border:1px #99cc00 solid;background:#fff;color:#ccc;height:25px;line-height:25px;font-size:12px!important; float:left;}
+.input_220_move{padding:0px 0px 0pt 3px;border:1px #99cc00 solid;background:#FFFFCC;width:218px;height:25px;line-height:25px;font-size:12px!important;float:left;}
+.input_220_out{padding:0px 0px 0pt 3px;border:1px #99cc00 solid;background:#fff;width:218px;height:25px;line-height:25px;font-size:12px!important;float:left;}
+
+
+.input_h220{width:218px;padding:0px 0px 0pt 3px;border:1px #99cc00 solid;background:#fff;color:#ccc;height:100px;line-height:30px;font-size:12px!important;}
+.input_h220_move{padding:0px 0px 0pt 3px;border:1px #99cc00 solid;background:#FFFFCC;width:218px;height:100px;font-size:12px!important;}
+.input_h220_out{padding:0px 0px 0pt 3px;border:1px #99cc00 solid;background:#fff;width:218px;height:100px;font-size:12px!important;}
+
+.input_218{width:218px;padding:0px 0px 0pt 3px;border:1px #d3deda solid;background:#fff;height:26px;line-height:26px;color:#666;font-size:12px!important;}
+.input_70{width:70px;padding:0px 0px 0pt 3px;border:1px #d3deda solid;background:#fff;height:26px;line-height:16px;font-size:12px!important;}
+
+
+

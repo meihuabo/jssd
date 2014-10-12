@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------------------------------------------------tanchucent------------------------------------------------------------------*/
+
+/*---------------------------------study/index.shtml城市---------------------------------------------------------
+
+.area_tc{position:absolute;z-index:555;margin:20px 0 0 0;* margin:20px 0 0 -60px;_margin:20px 0 0 -60px;}
+.area_tc .area_tcl{width:auto!important;border:1px #b3b1ad solid;margin:0;background:#FFF;padding:10px!important;position:absolute;}
+.area_tc .area_tcl div{line-height:1.8em;font-size:12px;width:auto!important;}
+.area_tc .area_tcl div img{float:right;position:absolute;top:10px;right:10px;}
+.area_tc .area_tcl div h6{padding:0;margin:0;width:90px!important;}
+.area_tc .area_tcl ul{padding:0;margin:0;}
+.area_tc .area_tcl li{line-height:1.8em!important;float:left;width:100px!important;padding:0 10px 0 0!important; white-space:nowrap!important;overflow:hidden!important;}
+.area_tc .area_tcl li a:hover{text-decoration:underline!important;}
+-*/
+
+.city_tc{position:absolute;z-index:555;margin:0;*margin-top:-5px;margin-top:-5px\9;_margin-top:-5px;border-left:0!important;}
+.city_tc .city_tcl{width:auto!important;border:1px #b3b1ad solid;margin:0;background:#FFF;padding:10px!important;position:absolute;}
+.city_tc .city_tcl dl{width:auto!important;line-height:1.8em;display:block!important;clear:both!important;}
+.city_tc .city_tcl dl h6{padding:0;margin:0;width:90px!important;}
+.city_tc .city_tcl dl img{float:right;position:absolute;top:10px;right:10px;}
+.city_tc .city_tcl dl a{padding:0;}
+.city_tc .city_tcl dl a:hover{background:none!important;color:#222!important;}
+.city_tc .city_tcl ul{padding:0;margin:0;}
+.city_tc .city_tcl li{line-height:1.8em!important;float:left;width:120px!important;margin:0 10px 0 0!important;display:inline;white-space:nowrap!important;overflow:hidden!important;}
+.city_tc .city_tcl li a{padding:2px!important;}
+.city_tc .city_tcl li a:hover{}
+.city_tc .city_tc1 li a.lisel{background:#6884bc!important;color:#FFF;}
+
+
+.menu_city{width:auto!important;border:1px #b3b1ad solid;margin:0;background:#FFF;padding:10px!important;position:absolute;margin:47px 300px 0;z-index:999999;}
+.menu_city dl{height:14px;}
+.menu_city dl img{float:right;position:absolute;top:5px;right:10px;}
+.menu_city dt{line-height:1.6em;width:268px;}
+.menu_city dt ul{float:left;margin-bottom:5px;}
+.menu_city dt .ulh{width:40px;float:left;}
+.menu_city dt .uln{float:left;}
+.menu_city dt .uln li{float:left;line-height:1.6em;text-align:left;padding-left:0;padding-bottom:2px;}
+.menu_city dt .uln li a{margin:0 4px 0 0;display:block;padding:0 2px;}
+.menu_city dt .uln li a.lisel{background:#6884bc!important;color:#FFF;}
+
+.menu_necity{background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #B3B1AD;margin:47px 220px 0;padding: 10px !important;position: absolute;width: auto !important;}
+.menu_necity dl{height:14px;}
+.menu_necity dl img{float:right;position:absolute;top:5px;right:10px;}
+.menu_necity dt{line-height:1.6em;width:268px;}
+.menu_necity dt ul{float:left;margin-bottom:5px;}
+.menu_necity dt .ulh{width:40px;float:left;}
+.menu_necity dt .uln{width:228px;float:left;}
+.menu_necity dt .uln li{float:left;line-height:1.6em;text-align:left;padding-left:0;padding-bottom:2px;}
+.menu_necity dt .uln li a{margin:0 4px 0 0;display:block;padding:0 2px;}
+.menu_necity dt .uln li a.lisel{background:#6884bc!important;color:#FFF;}
+
+
+/*---------------------------------------live 800----------------------------------------------*/
+
+.live800{background:url(/www/images/live800_bg.jpg) no-repeat;width:305px;height:110px;padding:54px 22px 0 117px;font-size:12px!important;}
+.live800 dt{line-height:16px;}
+.live800 p{margin:15px 0 0 0;text-align:right;}
+.live800 input{border:0;height:30px;width:75px;text-align:center;margin-left:10px;cursor:pointer;font-size:12px!important}
+.live800 .livebut{background:url(/www/images/live800_but.gif) no-repeat;}
+.live800 .livebut1{background:url(/www/images/live800_but1.gif) no-repeat;}
+.live800 .livebut_mos{background:url(/www/images/livebut_mos.gif) no-repeat;}
+.live800 .livebut_mos1{background:url(/www/images/livebut_mos1.gif) no-repeat;}

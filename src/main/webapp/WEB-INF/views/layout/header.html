@@ -1,0 +1,96 @@
+<head id="Head1">
+	<link rel="stylesheet" type="text/css" href="http://images.21edu.com/xue/css/common.css" />
+	<script type="text/javascript" src="$!request.contextPath/resources/js/core.js"></script>
+	<script type="text/javascript" src="http://images.21edu.com/ui/utils/data/ajax/scripts/ajax_v1.0.js"></script>
+	<title></title>
+</head>    
+<body>
+	<div class="x_x_login" style="background:none;">
+	<div class="warp">
+	    <div class="f_w700">
+	      <form action="" method="post">
+	        <ul>
+	            <input type="hidden" id="submitSign" />
+	            <input type="hidden" id="FromSystem" value="xueda.com" />
+	            <li class="vip">用户名：<input type="text" class="input_90" maxlength="100px" name="Username" id="Username"/></li>
+	            <li class="vip">密码：<input type="password" class="input_90" maxlength="100px" name="Password"
+	                id="Password"/></li>
+	            <li><a class="btn" href="javascript:void(0)" onclick="Logon();return false;" >登录</a></li>
+	            <li><a class="btn" href="#" onclick="GetRegisterPath();"  >注册</a></li>
+	            <li><a href="http://my.xueda.com/Customer/FindPwd" target="_blank" class="cipher">忘记密码?</a></li>
+	             <li class="qq" ><a href="#" onclick="javascript:parent.location= 'http://passport.xueda.com/connect/to?app=qq&backurl='+encodeURIComponent(parent.location.href)">登录</a></li>
+	            <li class="wb" ><a href="#" onclick="javascript:parent.location= 'http://passport.xueda.com/connect/to?app=sinaweibo&backurl='+encodeURIComponent(parent.location.href)">登录</a></li>
+	        </ul>
+	       </form>
+	    </div>
+	</div>
+	</div>
+	<script type="text/javascript">
+		document.domain = "xueda.com";
+		var url = location.href;
+		var isFirstLoad = url.indexOf("?");
+		if (isFirstLoad > -1) {
+		    parent.location.href = parent.location.href;
+		}
+		
+		function GetRegisterPath() {
+		    var urlHost = parent.location.host;
+		    var url = "http://my.xueda.com/Customer/Register?systemtype=";
+		    var systemType = "myxue";
+		    if (urlHost.indexOf("etest") > -1) {
+		        systemType = "etest";
+		    }
+		    else if (urlHost.indexOf("qaa") > -1) {
+		        systemType = "qaa";
+		    }
+		    else if (urlHost.indexOf("bbs") > -1) {
+		        systemType = "bbs";
+		    }
+		    else if (urlHost.toLowerCase().indexOf("my.xueda") > -1) {
+		        systemType = "myxue";
+		    }
+		    else {
+		        systemType = parent.location.host;
+		    }
+		    url = url + systemType;
+		    if (parent.location.href.indexOf("http://passport.xueda.com", 0) < 0) {
+		        parent.location.href = url + "&backURL=" + encodeURIComponent(parent.location.href);
+		    }
+		    else {
+		        parent.location.href = url + "&backURL=http://my.xueda.com";
+		    }
+		}
+		
+		function Logon() {
+		    if ($$('submitSign').value == '1') {
+		        return false;
+		    }
+		    if ($$('Username').value == '') {
+		        top.alert("请填写用户名");
+		        return false;
+		    }
+		    if ($$('Password').value == '') {
+		        top.alert("请填写密码");
+		        return false;
+		    }
+		    $$("submitSign").value = 1;
+		}
+		//捕捉回车事件
+		document.onkeypress = function(e) {
+		    var code;
+		    if (!e) {
+		        var e = window.event;
+		    }
+		    if (e.keyCode) {
+		        code = e.keyCode;
+		    }
+		    else if (e.which) {
+		        code = e.which;
+		    }
+		    if (code == 13) {
+		        ///这里是调用执行的方法
+		        Logon();
+		        /// return false;
+		    }
+		}
+	</script>
